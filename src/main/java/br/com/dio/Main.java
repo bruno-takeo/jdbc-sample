@@ -27,7 +27,17 @@ public class Main {
 
         //employeeDAO.findAll().forEach(System.out::println);
 
-        System.out.println(employeeDAO.findById(1));
+        //System.out.println(employeeDAO.findById(1));
+
+        /*var employee = new EmployeeEntity();
+        employee.setId(3);
+        employee.setName("Gabriel");
+        employee.setSalary(new BigDecimal("5500"));
+        employee.setBirthday(OffsetDateTime.now().minusYears(36).minusDays(10));
+        employeeDAO.update(employee);*/
+
+        //employeeDAO.delete(1);
+
     }
 
 }
