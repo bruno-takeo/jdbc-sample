@@ -24,6 +24,10 @@ public class Main {
         System.out.println(employee);
         employeeDAO.insert(employee);
         System.out.println(employee);*/
+
+        //employeeDAO.findAll().forEach(System.out::println);
+
+        System.out.println(employeeDAO.findById(1));
     }
 
 }
