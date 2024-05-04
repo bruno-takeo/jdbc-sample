@@ -78,7 +78,30 @@ public class Main {
         contact.setEmployee(employee);
         contactDAO.insert(contact);*/
 
-        System.out.println(employeeDAO.findById(1));
+        //System.out.println(employeeDAO.findById(1));
+
+        /*var employee = new EmployeeEntity();
+        employee.setName("João");
+        employee.setSalary(new BigDecimal("3200"));
+        employee.setBirthday(OffsetDateTime.now().minusYears(25));
+        System.out.println(employee);
+        employeeDAO.insert(employee);
+        System.out.println(employee);
+
+        var contact1 = new ContactEntity();
+        contact1.setDescription("miguel@miguel.com");
+        contact1.setType("e-mail");
+        contact1.setEmployee(employee);
+        contactDAO.insert(contact1);
+
+        var contact2 = new ContactEntity();
+        contact2.setDescription("33963365002");
+        contact2.setType("celular");
+        contact2.setEmployee(employee);
+        contactDAO.insert(contact2);*/
+
+        //System.out.println(employeeDAO.findById(1));
+        //employeeDAO.findAll().forEach(System.out::println);
 
     }
 
