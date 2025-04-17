@@ -2,6 +2,7 @@ package br.com.dio.persistence.entity;
 
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -11,6 +12,6 @@ public class ModuleEntity {
 
     private String name;
 
-    private List<EmployeeEntity> employees;
+    private List<EmployeeEntity> employees = new ArrayList<>();
 
 }

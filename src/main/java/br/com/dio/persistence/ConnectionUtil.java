@@ -12,7 +12,7 @@ import static lombok.AccessLevel.PRIVATE;
 public class ConnectionUtil {
 
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection("jdbc:mysql://localhost/jdbc-sample", "jdbc-sample", "jdbc-sample");
+        return DriverManager.getConnection("jdbc:mysql://localhost/jdbc-sample", "root", "caio32");
     }
 
 }

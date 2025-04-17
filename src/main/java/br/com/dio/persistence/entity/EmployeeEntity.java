@@ -4,6 +4,7 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -17,8 +18,8 @@ public class EmployeeEntity {
 
     private OffsetDateTime birthday;
 
-    private List<ContactEntity> contacts;
+    private List<ContactEntity> contacts = new ArrayList<>();
 
-    private List<ModuleEntity> modules;
+    private List<ModuleEntity> modules = new ArrayList<>();
 
 }

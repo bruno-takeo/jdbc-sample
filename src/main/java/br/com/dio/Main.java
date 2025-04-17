@@ -31,14 +31,14 @@ public class Main {
 
     public static void main(String[] args) {
         var flyway = Flyway.configure()
-                .dataSource("jdbc:mysql://localhost/jdbc-sample", "root", "root")
+                .dataSource("jdbc:mysql://localhost/jdbc-sample", "root", "caio32")
                 .load();
         flyway.migrate();
 
         /*var insert = new EmployeeEntity();
-        insert.setName("Miguel'");
-        insert.setSalary(new BigDecimal("2800"));
-        insert.setBirthday(OffsetDateTime.now().minusYears(18));
+        insert.setName("Caio");
+        insert.setSalary(new BigDecimal("6700"));
+        insert.setBirthday(OffsetDateTime.now().minusYears(20));
         System.out.println(insert);
         employeeDAO.insert(insert);
         System.out.println(insert);*/
@@ -47,18 +47,20 @@ public class Main {
 
         //System.out.println(employeeDAO.findById(1));
 
+    
         /*var update = new EmployeeEntity();
-        update.setId(insert.getId());
-        update.setName("Gabriel");
-        update.setSalary(new BigDecimal("5500"));
-        update.setBirthday(OffsetDateTime.now().minusYears(36).minusDays(10));
-        employeeDAO.update(update);
+        update.setId(2); // Aqui define que vai atualizar o registro com ID 1
+        update.setName("João");
+        update.setSalary(new BigDecimal("4500"));
+        update.setBirthday(OffsetDateTime.now().minusYears(26).minusDays(10));
+        employeeDAO.update(update);*/
+        
 
-        employeeDAO.delete(insert.getId());
+        //employeeDAO.delete(insert.getId());
 
-        employeeAuditDAO.findAll().forEach(System.out::println);*/
+        //employeeAuditDAO.findAll().forEach(System.out::println);
 
-        /*var entities = Stream.generate(() -> {
+        var entities = Stream.generate(() -> {
             var employee = new EmployeeEntity();
             employee.setName(faker.name().fullName());
             employee.setSalary(new BigDecimal(faker.number().digits(4)));
@@ -66,7 +68,7 @@ public class Main {
             return employee;
         }).limit(10000).toList();
 
-        employeeDAO.insert(entities);*/
+        employeeDAO.insert(entities);
 
         /*var employee = new EmployeeEntity();
         employee.setName("João");
